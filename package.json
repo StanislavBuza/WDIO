@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/wdio wdio.conf.js\n"
+    "test": "./node_modules/.bin/wdio wdio.conf.js",
+    "test:dairyCreate": "wdio wdio.conf.js --spec ./test/specs/dayReportCreate.spec.js",
+    "test:flashGroupCreate": "wdio wdio.conf.js --spec test/specs/flashGroupCreate.spec.js"
   },
   "keywords": [],
   "author": "",
