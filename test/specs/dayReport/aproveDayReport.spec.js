@@ -1,13 +1,10 @@
 const { expect } = require('chai');
-const { URL_LOGIN } = require('./register.data');
+const {loginAsAdmin, logout } = require('../User/actions');
+
 
 describe('CREATE DAY REPORT', () => {
     before('Login as admin', () => {
-        browser.url(URL_LOGIN);
-        $('form input[name="email"]').setValue('29stasik@gmail.com');
-        $('form input[name="password"]').setValue('11111');
-        $('form button[type="submit"]').click();
-        browser.pause(1000);
+       loginAsAdmin();
     });
 
   it('should redirect to Diary create page', () => {
@@ -15,9 +12,16 @@ describe('CREATE DAY REPORT', () => {
       diary.click();
       const createDayReport = $('.btn=Create day report');
       createDayReport.click();
-      browser.pause(5000);
-
+      browser.pause(1000);
+      logout();
   });
+
+
+  // it('s', () => {
+  //
+  // });
+
+
   //
   //   it('should create Diary Day report', () => {
   //       $('form input[label="I need help"]').click();

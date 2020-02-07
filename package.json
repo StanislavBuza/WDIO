@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/wdio wdio.conf.js",
-    "test:dairyCreate": "wdio wdio.conf.js --spec ./test/specs/dayReportCreate.spec.js",
-    "test:flashGroupCreate": "wdio wdio.conf.js --spec test/specs/flashGroupCreate.spec.js"
+    "test:dairyCreate": "wdio wdio.conf.js --spec test/specs/dayReport/dayReportCreate.spec.js",
+    "test:aproveDayReport": "wdio wdio.conf.js --spec test/specs/dayReport/aproveDayReport.spec.js",
+    "test:flashGroupCreate": "wdio wdio.conf.js --spec test/specs/cards/flashGroupCreate.spec.js",
+    "test:registerUser": "wdio wdio.conf.js --spec test/specs/register/register.spec.js"
   },
   "keywords": [],
   "author": "",
