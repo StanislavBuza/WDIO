@@ -1,6 +1,8 @@
 const { URL_REGISTER, URL_LOGIN, user, pageRegister, pageRegisterSelectors, pageLogin, pageConfirmation } = require('./register.data');
+import { URL_REGISTER, URL_LOGIN, user, pageRegister, pageRegisterSelectors, pageLogin, pageConfirmation } from './register.data';
 
 const { expect } = require('chai');
+import {expect} from 'chai';
 
 describe('Register page', () => {
     it('should have the right title', () => {
